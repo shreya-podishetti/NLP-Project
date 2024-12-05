@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block links %}
+<a href="/logout">Logout</a>
+{% endblock %}
+
+{% block body %}
+<div id="main" style="height: auto;">
+    <div id="content" style="height: auto;">
+        <div class="box" style="height: auto; padding: 20px; border: 1px solid #d7d7d7; border-radius: 10px; background-color: #fff;">
+            <h1>{{ title }}</h1>
+            <p>{{ description }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

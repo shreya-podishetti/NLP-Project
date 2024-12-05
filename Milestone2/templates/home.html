@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block links %}
+<a href="/login">Login</a>
+{% endblock %} 
+
+{% block body %}
+<div id="main" style='height: auto'>
+    <div id="content" style='height: auto'>
+
+        <!-- Engineering Jobs -->
+        <div class="category-title">
+            <h2>Engineering Jobs</h2>
+        </div>
+        <div class="box" style='height: auto'>
+            {% for job in engineering_data %}
+            <div class="job-container">
+                <div class="job-image">
+                    <img src="{{ url_for('static', filename='images/job.jpeg') }}" alt="Engineering Job Image">
+                </div>
+                <div class="job-text">
+                    <h4 class="job-title"><a href="#">{{ job['title'] }}</a></h4>
+                    <p class="job-description">{{ job['description'] }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Sales Jobs -->
+        <div class="category-title">
+            <h2>Sales Jobs</h2>
+        </div>
+        <div class="box" style='height: auto'>
+            {% for job in sales_data %}
+            <div class="job-container">
+                <div class="job-image">
+                    <img src="{{ url_for('static', filename='images/job.jpeg') }}" alt="Sales Job Image">
+                </div>
+                <div class="job-text">
+                    <h4 class="job-title"><a href="#">{{ job['title'] }}</a></h4>
+                    <p class="job-description">{{ job['description'] }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Healthcare & Nursing Jobs -->
+        <div class="category-title">
+            <h2>Healthcare and Nursing Jobs</h2>
+        </div>
+        <div class="box" style='height: auto'>
+            {% for job in healthcare_nursing_data %}
+            <div class="job-container">
+                <div class="job-image">
+                    <img src="{{ url_for('static', filename='images/job.jpeg') }}" alt="Healthcare Job Image">
+                </div>
+                <div class="job-text">
+                    <h4 class="job-title"><a href="#">{{ job['title'] }}</a></h4>
+                    <p class="job-description">{{ job['description'] }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Accounting & Finance Jobs -->
+        <div class="category-title">
+            <h2>Accounting and Finance Jobs</h2>
+        </div>
+        <div class="box" style='height: auto'>
+            {% for job in accounting_finance_data %}
+            <div class="job-container">
+                <div class="job-image">
+                    <img src="{{ url_for('static', filename='images/job.jpeg') }}" alt="Finance Job Image">
+                </div>
+                <div class="job-text">
+                    <h4 class="job-title"><a href="#">{{ job['title'] }}</a></h4>
+                    <p class="job-description">{{ job['description'] }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endblock %}

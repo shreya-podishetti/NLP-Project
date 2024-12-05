@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block links %}
+<a href="/login">Login</a>
+{% endblock %}
+
+{% block body %}
+<div id="main" style='height: auto'>
+    <div id="content" style='height: auto'>
+        <div class="box" style='height: auto'>
+            <br>
+            <h1>About Us</h1>
+            <p>
+                Welcome to Job Seek, your premier destination for finding the best job opportunities. Our platform connects job seekers with top employers to facilitate seamless job matches.
+            </p>
+            <h1>Our Mission</h1>
+            <p>
+                Our mission is to empower individuals to find careers they love and excel in. We aim to innovate the way people search for jobs and how companies recruit top talent.
+            </p>
+            <h1>Our Team</h1>
+            <div class="team">
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images/about1.jpeg') }}" alt="Team Member">
+                    <h3>Jane Doe</h3>
+                    <p>CEO</p>
+                    <p>Jane leads our company with a passion for innovation and excellence in the recruitment industry.</p>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images//about3.jpeg') }}" alt="Team Member">
+                    <h3>John Smith</h3>
+                    <p>CTO</p>
+                    <p>John drives the technology behind our job matching algorithms and platform features.</p>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images//about2.png') }}" alt="Team Member">
+                    <h3>Emily Johnson</h3>
+                    <p>Head of HR</p>
+                    <p>Emily ensures that our company culture flourishes and that we attract the best talent to our team.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script type="application/javascript">
+    // Optional JavaScript for dynamic interactions or enhancements can be added here.
+</script>
+{% endblock %}

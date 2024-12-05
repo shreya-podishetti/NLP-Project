@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block links %}
+<a href="/login">Login</a>
+{% endblock %} 
+
+{% block body %}
+<div id="main" style='height: auto'>
+    <div id="content" style='height: auto'>
+        <div class="box" style='height: auto'>
+            <div class="cl">&nbsp;</div>
+            <div class="posts">
+                {% for job in engineering_data %}
+                <div class="job-container">
+                    <div class="job-image">
+                        <img src="{{ url_for('static', filename='images/job.jpeg') }}" alt="Job Image">
+                    </div>
+                    <div class="job-text">
+                        <h4 class="job-title"><a href="#">{{ job['title'] }}</a></h4>
+                        <p class="job-description">{{ job['description'] }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        <div class="cl">&nbsp;</div>
+    </div>
+  <div class="cl">&nbsp;</div>
+</div>
+{% endblock %}

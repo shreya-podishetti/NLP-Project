@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block links %}
+<a href="/logout">Logout</a>
+{% endblock %} 
+
+{% block body %}
+<form action="/admin" method="POST" class="form-style">
+    <h2 class="form-section-title">Add New Job Entry</h2>
+    <p class="form-input-label">Title:</p>
+    <input type="text" name="title" class="form-input" value="{{ title }}" required/>
+    <p class="form-input-label">Description:</p>
+    <textarea name="description" class="form-textarea" required>{{ description }}</textarea>
+    <p class="form-input-label">Recommended Category:</p>
+    <input type="text" name="category" class="form-input" value="{{ prediction }}">
+    <p>
+        <input type="submit" name="button" value="Classify" class="form-submit-button" />
+        <input type="submit" name="button" value="Save" class="form-submit-button" />
+    </p>
+    <p class="form-error-message">{{ category_flag }}</p>
+</form>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

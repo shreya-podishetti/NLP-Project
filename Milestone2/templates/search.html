@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block links %}
+<a href="/login">Login</a>
+{% endblock %}
+
+{% block body %}
+<div id="main" style='height: auto'>
+    <div id="content" style='height: auto'>
+        <div class="box" style='height: auto'>
+            <div class="cl">&nbsp;</div>
+            <div class="posts">
+                {% if num_results > 0 %}
+                    <h2>Found {{ num_results }} result(s) with "{{ search_string }}" (displaying a maximum of 4 results)...</h2>
+                    <br>
+                    <br>
+                    <br>
+                    {% for article in article_search[:4] %}
+                    <div class="job-container">
+                        <div class="job-text">
+                            <h4 class="job-title">{{ article['title'] }}</h4>
+                            <p class="job-description">{{ article['description'] }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <h2>No results found for "{{ search_string }}"</h2>
+                {% endif %}
+            </div>
+            <div class="cl">&nbsp;</div>
+        </div>
+        <div class="cl">&nbsp;</div>
+    </div>
+</div>
+{% endblock %}
