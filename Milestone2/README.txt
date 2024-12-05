@@ -8,17 +8,17 @@ Requirements :
 	* os
 			
 === Overview ===
-This project is a job-seeking website developed by using Flask named as \'91Job Seek\'92. This website allows job seekers to search through job listings and view the detailed job descriptions posted by employers. The website also allows the employer to login to the portal and create new job listings. By leveraging NLP in this project, the website will also recommend job categories for each of the new listings. The categories available include \'91Accounting and Finance\'92, \'91Engineering\'92, \'91Healthcare and Nursing\'92, and \'91Sales\'92.\
+This project is a job-seeking website developed by using Flask named as 'Job Seek'. This website allows job seekers to search through job listings and view the detailed job descriptions posted by employers. The website also allows the employer to login to the portal and create new job listings. By leveraging NLP in this project, the website will also recommend job categories for each of the new listings. The categories available include 'Accounting and Finance', 'Engineering', 'Healthcare and Nursing', and 'Sales'.
 
 === Features ===
 For Job Seekers
 
-* Job Search : Job seekers can search for particular job listings based on keywords. The search results displays the top 4 job titles and descriptions directly on the search results page.\
+- Job Search : Job seekers can search for particular job listings based on keywords. The search results displays the top 4 job titles and descriptions directly on the search results page.
 
 For Employers
 
-* Creating New Job Listings : Employers can login to the admin portal with their username and password and then create new job listings by entering the job title, description, and category details.\
-* Category Recommendation : The website recommends suitable job categories based on the job description provided by the employer. If the employer is not happy with the generated category he has the option to rewrite and save it.\
+* Creating New Job Listings : Employers can login to the admin portal with their username and password and then create new job listings by entering the job title, description, and category details.
+* Category Recommendation : The website recommends suitable job categories based on the job description provided by the employer. If the employer is not happy with the generated category he has the option to rewrite and save it.
 
 === Directory Structure ===
 
