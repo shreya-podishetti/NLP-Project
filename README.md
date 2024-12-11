@@ -157,3 +157,9 @@ relevant search.
 6. You have the flexibility to choose the language model and the classification model for the job category
 recommendation task.
 7. You do not need to create any employer login for the job website.
+
+Feedback and Contact
+--------------------
+I would love to hear you feedback, suggestions, or answer any questions regarding th projects of this repository. Feel free to reach out to me via email at shreyapodishetti30@gmail.com
+
+Have a great time exploring this repository. Thank you!
